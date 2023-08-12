@@ -1,4 +1,5 @@
 import request from 'axios';
+import api_key from './env.js';
 
 console.log("hey")
 
@@ -10,7 +11,7 @@ const options = {
   method: 'GET',
   url: 'https://dad-jokes.p.rapidapi.com/random/joke',
   headers: {
-    'X-RapidAPI-Key': 'c57faf654emsh71188340a759deap169abcjsnc4477eab7500',
+    'X-RapidAPI-Key': api_key,
     'X-RapidAPI-Host': 'dad-jokes.p.rapidapi.com'
   }
 };
